@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source Files\截图工具">
+      <UniqueIdentifier>{b43ab760-b6d8-4fbd-9822-04b4e4fc518d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\截图工具">
+      <UniqueIdentifier>{0028b5ae-5f04-4d59-b0e2-4d2b8d8c8ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\鼠标想定绘制">
+      <UniqueIdentifier>{a7cba6b1-d6b2-41ae-aecb-995bc931f906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\鼠标想定绘制">
+      <UniqueIdentifier>{236bcddd-e3a2-4aae-a2a4-911dda5d973d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\下拉复选框">
+      <UniqueIdentifier>{35e4d011-2106-4ad7-9b29-843bbbeb4df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\下拉复选框">
+      <UniqueIdentifier>{08ba447e-6ab3-4fe2-9d68-3472e530f0fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\自定义流程图">
+      <UniqueIdentifier>{5c27ca57-f1ea-43e7-9f23-d6109765fb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\自定义流程图">
+      <UniqueIdentifier>{9913e598-36fb-4835-8d79-2bac20b36eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\甘特图">
+      <UniqueIdentifier>{abefea39-f60a-4f15-b8ad-e04739c14224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\甘特图">
+      <UniqueIdentifier>{929e13ea-36fa-4404-9da5-4da2ba98b867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\表格">
+      <UniqueIdentifier>{c524119a-2172-4839-88b2-eb28406fe318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\表格">
+      <UniqueIdentifier>{0bd88a83-a73b-4b78-8b72-4aa386b99121}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="screen_capture_widget.cpp">
+      <Filter>Source Files\截图工具</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="slid_screen_capture_widget.cpp">
+      <Filter>Source Files\截图工具</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_to_decide.cpp">
+      <Filter>Source Files\鼠标想定绘制</Filter>
+    </ClCompile>
+    <ClCompile Include="multi_select_combobox.cpp">
+      <Filter>Source Files\下拉复选框</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_table_widget.cpp">
+      <Filter>Source Files\表格</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="screen_capture_widget.h">
+      <Filter>Header Files\截图工具</Filter>
+    </QtMoc>
+    <QtMoc Include="slid_screen_capture_widget.h">
+      <Filter>Header Files\截图工具</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_test.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="draw_to_decide.h">
+      <Filter>Header Files\鼠标想定绘制</Filter>
+    </QtMoc>
+    <QtMoc Include="multi_select_combobox.h">
+      <Filter>Header Files\下拉复选框</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_table_widget.h">
+      <Filter>Header Files\表格</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtPractice.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StyleSheet.css">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

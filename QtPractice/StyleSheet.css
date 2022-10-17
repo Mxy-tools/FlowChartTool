@@ -1,0 +1,158 @@
+/************************************MultiSelectComboBox***********************************/
+
+/*********************************************MultiSelectComboBox主体样式*********************************************/
+QComboBox#multiselect_combobox {
+    /*设置边框*/
+    border: 1px solid rgba(21,92,181,178);
+    /*设置下拉框风格*/
+    combobox-popup: 0;
+    /*设置圆角*/
+    border-radius: 20px;
+    /*背景色*/
+    background: rgba(69,167,251,25);
+}
+    /*悬浮态*/
+    QComboBox#multiselect_combobox:hover {
+        border: 1px solid rgba(36,118,222,178);
+        border-radius: 20px;
+        background: rgba(69,167,251,25);
+    }
+
+    /*********************************************MultiSelectComboBox下拉框按钮样式*********************************************/
+    QComboBox#multiselect_combobox::drop-down {
+        color: rgb(255,255,255);
+        width: 20px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        /*设置透明色*/
+        background-color: transparent;
+    }
+    /*按钮图标：选中态*/
+    QComboBox#multiselect_combobox::down-arrow:on {
+        width: 14px;
+        height: 14px;
+        border-image: url(:/new/prefix1/Resources/arrow_up.png);
+    }
+    /*按钮图标：常态*/
+    QComboBox#multiselect_combobox::down-arrow {
+        width: 14px;
+        height: 14px;
+        border-image: url(:/new/prefix1/Resources/arrow_down.png);
+    }
+
+/*********************************************MultiSelectComboBox输入框样式*********************************************/
+QLineEdit#multiselect_lineedit {
+    padding-left: 10px;
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+    background: rgba(69,167,251,25);
+}
+
+/*********************************************MultiSelectComboBox搜索框样式*********************************************/
+QLineEdit#multiselect_lineedit_qu {
+    padding-right: 10px;
+    background: rgba(69,167,251,25);
+}
+
+/*********************************************MultiSelectComboBox下拉框样式*********************************************/
+QComboBox#multiselect_combobox QAbstractItemView {
+    /*设置选中没有虚线*/
+    outline: 0px solid gray;
+    border: 1px solid rgb(19,69,150);
+    background-color: rgba(69,167,251,25);
+    border-radius: 20px;
+    padding: 5px;
+}
+    /*单项常态*/
+    QComboBox#multiselect_combobox QAbstractItemView::item {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        background-color: rgba(69,167,251,25);
+    }
+        /*单项选中态*/
+        QComboBox#multiselect_combobox QAbstractItemView::item:selected {
+            color: rgb(255,255,255);
+            background-color: rgb(13,56,123,25);
+        }
+
+/*********************************************MultiSelectComboBox滚动条样式*********************************************/
+QComboBox#multiselect_combobox QAbstractScrollArea QScrollBar:vertical {
+    width: 6px;
+    height: 100px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+/*滑块常态*/
+QComboBox#multiselect_combobox QAbstractScrollArea QScrollBar::handle:vertical {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.1);
+}
+    /*滑块鼠标悬浮态*/
+    QComboBox#multiselect_combobox QAbstractScrollArea QScrollBar::handle:vertical:hover {
+        background: rgb(90, 91, 93);
+    }
+/*滚动条上箭头*/
+QComboBox#multiselect_combobox QScrollBar::add-line::vertical {
+    /*设置没有上箭头*/
+    border: none
+}
+/*滚动条下箭头*/
+QComboBox#multiselect_combobox QScrollBar::sub-line::vertical {
+    border: none;
+}
+
+
+
+/************************************CustomSlidScreenCapture***********************************/
+
+/************************************CustomSlidScreenCapture菜单栏主体样式***********************************/
+QWidget#screen_capture_toolbar {
+    background-color: rgb(255,255,255);
+}
+/************************************CustomSlidScreenCapture菜单栏按钮总体样式***********************************/
+QPushButton#screen_capture_toolbar_copy, QPushButton#screen_capture_toolbar_color, QPushButton#screen_capture_toolbar_cute, QPushButton#screen_capture_toolbar_save, QPushButton#screen_capture_toolbar_result, QPushButton#screen_capture_toolbar_close {
+    background-color: rgb(255,255,255);
+    border: none;
+}
+
+    QPushButton#screen_capture_toolbar_copy:hover, QPushButton#screen_capture_toolbar_color:hover, QPushButton#screen_capture_toolbar_cute:hover, QPushButton#screen_capture_toolbar_save:hover, QPushButton#screen_capture_toolbar_result:hover, QPushButton#screen_capture_toolbar_close:hover {
+        background-color: rgb(211,211,211);
+        border: none;
+    }
+
+    QPushButton#screen_capture_toolbar_copy:pressed, QPushButton#screen_capture_toolbar_color:pressed, QPushButton#screen_capture_toolbar_cute:pressed, QPushButton#screen_capture_toolbar_save:pressed, QPushButton#screen_capture_toolbar_result:pressed, QPushButton#screen_capture_toolbar_close:pressed {
+        background-color: rgb(255,255,255);
+        border: none;
+    }
+/************************************CustomSlidScreenCapture菜单栏按钮--copy***********************************/
+QPushButton#screen_capture_toolbar_copy {
+    image: url(":/new/prefix1/Resources/copy.png");
+}
+/************************************CustomSlidScreenCapture菜单栏按钮--color***********************************/
+QPushButton#screen_capture_toolbar_color {
+    image: url(":/new/prefix1/Resources/color.png");
+}
+/************************************CustomSlidScreenCapture菜单栏按钮--cute***********************************/
+QPushButton#screen_capture_toolbar_cute {
+    image: url(":/new/prefix1/Resources/cute.png");
+}
+/************************************CustomSlidScreenCapture菜单栏按钮--save***********************************/
+QPushButton#screen_capture_toolbar_save {
+    image: url(":/new/prefix1/Resources/save.png");
+}
+/************************************CustomSlidScreenCapture菜单栏按钮--result***********************************/
+QPushButton#screen_capture_toolbar_result {
+    image: url(":/new/prefix1/Resources/result.png");
+}
+/************************************CustomSlidScreenCapture菜单栏按钮--close***********************************/
+QPushButton#screen_capture_toolbar_close {
+    image: url(":/new/prefix1/Resources/close.png");
+}
+
+
+
+/******************************************************CustomDraw*****************************************************/
+QLineEdit#custom_draw_text_input {
+    background-color: transparent;
+}

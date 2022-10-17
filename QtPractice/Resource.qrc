@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Resources/arrow_down.png</file>
+        <file>Resources/arrow_up.png</file>
+        <file>Resources/close.png</file>
+        <file>Resources/color.png</file>
+        <file>Resources/copy.png</file>
+        <file>Resources/cute.png</file>
+        <file>Resources/pen.png</file>
+        <file>Resources/result.png</file>
+        <file>Resources/save.png</file>
+        <file>Resources/split_screen.png</file>
+        <file>StyleSheet.css</file>
+    </qresource>
+</RCC>
